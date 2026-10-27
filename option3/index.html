@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heer Mehta — Software Developer</title>
+<meta name="description" content="Heer Mehta is a software developer in Gandhinagar building backend APIs, full-stack features and applied AI prototypes. Explore the work as an interactive 3D graph.">
+<meta name="theme-color" content="#06070b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="scene" aria-hidden="true"></canvas>
+<div id="tags" aria-label="Graph nodes"></div>
+
+<header class="hud top">
+  <div class="id">
+    <h1>Heer Mehta</h1>
+    <p>Software developer in Gandhinagar. Backend APIs, full-stack features and applied AI prototypes. Open to freelance work and software roles.</p>
+  </div>
+  <nav class="links" aria-label="Links">
+    <a href="../../">Option 1</a>
+    <a href="../../option2/">Option 2</a>
+    <a href="../../option4/dist/">Option 4</a>
+    <a href="https://heer-mehta-portfolio.vercel.app/assets/Heer_Mehta_Resume.pdf">Resume ↗</a>
+    <a href="https://github.com/heer00">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/heer-mehta-14833928b/">LinkedIn ↗</a>
+    <a class="cta" href="mailto:mehta.heer910@gmail.com?subject=Hello%20Heer">Email Heer</a>
+  </nav>
+</header>
+
+<footer class="hud bottom">
+  <div class="dock" id="dock" role="group" aria-label="Filter the graph">
+    <button type="button" data-f="all" aria-pressed="true">Everything</button>
+    <button type="button" data-f="project" aria-pressed="false">Projects</button>
+    <button type="button" data-f="skill" aria-pressed="false">Skills</button>
+  </div>
+  <p class="hint" id="hint">Drag to orbit. Scroll to zoom. Click any node.</p>
+</footer>
+
+<aside class="panel" id="panel" aria-live="polite" hidden>
+  <button class="close" id="close" type="button" aria-label="Close details">×</button>
+  <h2 id="p-title"></h2>
+  <p class="kind" id="p-kind"></p>
+  <p id="p-desc"></p>
+  <ul id="p-items"></ul>
+  <a class="repo" id="p-repo" href="#" hidden>View repository ↗</a>
+</aside>
+
+<noscript><p class="ns">This page draws an interactive 3D graph and needs JavaScript. Heer Mehta is a software developer in Gandhinagar. Email: mehta.heer910@gmail.com · GitHub: github.com/heer00</p></noscript>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
